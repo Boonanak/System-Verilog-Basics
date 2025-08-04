@@ -1,0 +1,8 @@
+- Open ModelSim from the terminal by entering "vsim"
+- Navigate to the correct directory with cd, (make sure to switch the direction of the /'s with conpath
+- Create a work library with vlib work
+- Compile the design file(s) and tb(s) in one line with vlog "file.sv" "anotherfile.sv"
+- In libary, navigate to the work folder you made and select the tb
+- Drag important signals over to the wave viewer
+- On the top select Simulate and then run-all
+- Remember to select Zoom Full 
