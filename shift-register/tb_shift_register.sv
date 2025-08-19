@@ -56,16 +56,16 @@ module tb_shift_register;
 		// Load
 		mode  = LOAD;
 		d = 8'b11110000;
-		#10
+		#10;
 		
 		// Shift Right
 		mode = SHIFT_RIGHT;
-		#10
+		#10;
 		
 		
 		// Shift Left
 		mode = SHIFT_LEFT;
-		#10
+		#10;
 		
 		$finish;
 	end

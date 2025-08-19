@@ -1,11 +1,11 @@
 // Package for the new mode type that both shift_register and tb_shift_register will import
-package shift_register_pkg;
+package pkg_complex_counter;
 
   typedef enum logic [1:0] {
     HOLD = 2'b00,
-    LOAD = 2'b01,
-    SHIFT_RIGHT = 2'b10,
-    SHIFT_LEFT = 2'b11
-  } shift_mode_t;
+    UP = 2'b01,
+    DOWN = 2'b10,
+    LOAD = 2'b11
+  } count_mode_t;
 
 endpackage
