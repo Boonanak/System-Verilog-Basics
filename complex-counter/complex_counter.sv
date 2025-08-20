@@ -9,7 +9,10 @@ import pkg_complex_counter::*;
 // value just like what is held in the counter which allows for more freedom but at the cost of 
 // being more prone to overflow if the user accidental increments or decrements by too large a
 // value, data can be lost. If you wanted to prevent overflow or underflow you could introduce
-// clamping logic to cap the data at 255 or 0 respectively, (assuming 8 bit width).
+// clamping logic to cap the data at 255 or 0 respectively, (assuming 8 bit width). After making
+// this I ahve realized that it is absoletely valid to add in a enable flag that can also be
+// toggled such that the cpu, (if this were part of a larger system), would be able to pause
+// without losing a critical value, this also allows for power saving.
 module complex_counter #( 
 
 	parameter WIDTH = 8 //default is 8 bit counter
