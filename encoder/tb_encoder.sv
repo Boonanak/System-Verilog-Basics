@@ -3,8 +3,7 @@
 // the wave that the output doesn't actually reflect this until 20 ns. This is because only then
 // then is enable switched to on, (it rememebers the value that was set before it though). It then
 // tests the behavior of the module, (also note all inputs are one hot to ensure safe use of This
-// module as it is designed with that in mind, however the next priority encoder does not require
-// one hot inputs and will still function. It is also important to remember that the input
+// module as it is designed with that in mind. It is also important to remember that the input
 // indexing is indexed from 0.
 `timescale 1ns/1ps //default timescale
 
